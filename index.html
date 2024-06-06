@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Asado</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calcula tu asado</h1>
+    </header>
+    <main>
+        <!-- Input: cantidad de personas, cuanto quieren gastar, acompañamientos o no -->
+        <div>
+            <h2>Comensales</h2>
+            <label for="cantidadPersonas"> Cantidad de hombres:</label>
+            <input type="number" name="cantidadhombres" id="cantidadhombres"><br>
+            <label for="cantidadPersonas"> Cantidad de mujeres:</label>
+            <input type="number" name="cantidadmujeres" id="cantidadmujeres"><br>
+            <label for="cantidadPersonas"> Cantidad de niños:</label>
+            <input type="number" name="cantidadninios" id="cantidadninios">
+        </div>
+        <div>
+            <h2>Achuras</h2>
+            <label for="chori">Choris:</label>
+            <input type="checkbox" name="chori" id="chori"> <br>
+            <label for="chori">Morcilla:</label>
+            <input type="checkbox" name="morcilla" id="morcilla"><br>
+            <label for="chori">Salchica parrillera:</label>
+            <input type="checkbox" name="salchicha" id="salchicha"><br>
+            <label for="chori">Chinchulin:</label>
+            <input type="checkbox" name="chinchulin" id="chinchulin"><br>
+            <label for="chori">Molleja:</label>
+            <input type="checkbox" name="chinchulin" id="molleja"><br>
+        </div>
+        <div>
+            <h2>Presupuesto</h2>
+            <label for="presupuesto"> Presupuesto:</label>
+            <input type="range" name="presupuesto" id="presupuesto" max="4" min="0" step="1">
+        </div>
+        <div>
+            <input type="button" value="Calcular mi asado" id="calcular">
+        </div>
+        <div id="DIVresultado">
+
+        </div>
+
+    </main>
+    <footer>
+        <span>Hecho por <a href="http://www.linkedin.com/in/estebanpiazza">Esteban Piazza</a></span>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
